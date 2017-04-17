@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar [color]="navBarColor()">
+    <ion-title>
+      Eazy Mobile
+    </ion-title>
+  </ion-navbar>
+  
+</ion-header>
+
+<ion-content padding [ngStyle]="backgroundColor()" >
+<!--<img src="assets/images/img/currency.png">-->
+
+<ion-list>
+  <ion-list-header [ngStyle]="Tittle()">
+    Welcome {{simname}} Customer
+  </ion-list-header>
+	<ion-item (click)='Balance()'><ion-icon [ngStyle]="iconColor()" name="ios-arrow-forward-outline" item-right></ion-icon> Balance</ion-item>
+	<ion-item (click)='Recharge()'><ion-icon [ngStyle]="iconColor()" name="ios-arrow-forward-outline" item-right></ion-icon>Recharge</ion-item>
+  <ion-item (click)='Loan()'><ion-icon [ngStyle]="iconColor()" name="ios-arrow-forward-outline" item-right></ion-icon>Take a loan</ion-item>
+	<ion-item (click)='CustomerCare()'><ion-icon [ngStyle]="iconColor()" name="ios-arrow-forward-outline" item-right></ion-icon>Call Customer Care</ion-item>
+  <ion-item (click)='Contact()'><ion-icon [ngStyle]="iconColor()" name="ios-arrow-forward-outline" item-right></ion-icon>Contact Us</ion-item>
+</ion-list>
+</ion-content>
